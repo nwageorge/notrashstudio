@@ -71,12 +71,11 @@ h1 em { color: var(--red); }
 .section-heading h2, .manifesto h2, .contact h2 { font-size: clamp(3rem, 7.2vw, 8rem); line-height: .92; }
 .lede { max-width: 48rem; font: 1.35rem/1.35 var(--serif); }
 .work-filters { display: flex; flex-wrap: wrap; gap: .7rem 1.4rem; margin-top: 3rem; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .63rem; text-transform: uppercase; letter-spacing: .09em; }
-.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(60px, 8vw, 120px) clamp(20px, 4vw, 60px); margin-top: 5rem; }
+.project-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(75px, 10vw, 150px); margin-top: 5rem; }
 .project-card { display: block; min-width: 0; }
 .project-card.project-wide { grid-column: 1 / -1; }
 .project-card figure { position: relative; margin: 0 0 1rem; overflow: hidden; background: #deddd8; }
-.project-card:not(.project-wide) figure { aspect-ratio: 1.18; }
-.project-card.project-wide figure { aspect-ratio: 2.05; }
+.project-card:not(.project-wide) figure, .project-card.project-wide figure { aspect-ratio: 16 / 9; }
 .project-card img { height: 100%; object-fit: cover; object-position: top center; filter: saturate(.92); transition: transform .65s cubic-bezier(.2,.8,.2,1), filter .4s ease; }
 .project-card:hover img, .project-card:focus-visible img { transform: scale(1.025); filter: saturate(1.08); }
 .project-card figure::after { content: "View project ↗"; position: absolute; right: 14px; bottom: 14px; padding: .55rem .75rem; background: var(--ink); color: #fff; font-size: .56rem; text-transform: uppercase; letter-spacing: .08em; opacity: 0; transform: translateY(8px); transition: opacity .3s ease, transform .3s ease; }
@@ -147,7 +146,7 @@ h1 em { color: var(--red); }
   .case-grid { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card.project-wide { grid-column: auto; }
-  .project-card.project-wide figure, .project-card:not(.project-wide) figure { aspect-ratio: 1.35; }
+  .project-card.project-wide figure, .project-card:not(.project-wide) figure { aspect-ratio: 16 / 9; }
   .reference-collage { min-height: 115vw; }
   .case-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
   .detail-strip { grid-template-columns: 1fr; }
