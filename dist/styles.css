@@ -33,9 +33,9 @@ a { color: inherit; text-decoration: none; }
 .availability { display: block; margin-top: 1rem; }
 .availability i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #27a35a; margin-right: .4rem; animation: pulse 2s infinite; }
 
-main { margin-left: var(--rail); }
-.hero { min-height: 148svh; margin-left: calc(var(--rail) * -1); position: relative; overflow: hidden; border-bottom: 0; background: var(--paper); }
-.hero-copy { position: relative; z-index: 8; width: min(820px, 60%); margin-left: clamp(310px, 34vw, 560px); padding-top: clamp(115px, 15vh, 190px); }
+main { margin-left: 0; }
+.hero { min-height: 148svh; margin-left: var(--rail); position: relative; overflow: hidden; border-bottom: 0; background: var(--paper); }
+.hero-copy { position: relative; z-index: 8; width: min(820px, 64%); margin-left: clamp(90px, 16vw, 270px); padding-top: clamp(115px, 15vh, 190px); }
 .eyebrow { margin: 0 0 2rem; font-size: .66rem; line-height: 1.2; text-transform: uppercase; letter-spacing: .12em; }
 h1, h2 { margin: 0; font-weight: 400; letter-spacing: -.055em; text-wrap: balance; }
 h1 { font-size: clamp(2.35rem, 3.45vw, 4.25rem); line-height: 1.04; }
@@ -48,12 +48,12 @@ h1 em { color: var(--red); }
 .hero-actions { display: flex; gap: 2rem; margin-top: 2.1rem; }
 .hero-actions a { position: relative; font: .95rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; }
 .hero-actions a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -.5rem; height: 3px; background: var(--ink); transform: rotate(-1deg); }
-.hero-collage { position: absolute; z-index: 4; left: clamp(28px, 3vw, 54px); right: 1.5%; top: clamp(465px, 54vh, 610px); height: min(920px, 86vw); }
+.hero-collage { position: absolute; z-index: 4; left: clamp(125px, 9vw, 180px); right: 1.5%; top: clamp(465px, 54vh, 610px); height: min(880px, 82vw); }
 .cutout { position: absolute; margin: 0; filter: drop-shadow(0 15px 10px rgba(17,17,15,.12)); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
 .cutout:hover { z-index: 9; transform: rotate(0) translateY(-12px) scale(1.025); }
 .cutout img { height: 100%; object-fit: cover; }
 .cutout-dream { z-index: 5; width: 31%; height: 72%; left: 39%; top: 1%; clip-path: polygon(9% 2%, 88% 0, 100% 12%, 96% 91%, 78% 100%, 4% 94%, 0 16%); transform: rotate(1.5deg); background: #cfe762; padding: 12px; }
-.cutout-eiffel { z-index: 4; width: 30%; height: 66%; left: 1%; top: 18%; padding: 10px; background: #86aabd; clip-path: polygon(5% 0, 95% 5%, 100% 95%, 8% 100%, 0 12%); transform: rotate(-7deg); }
+.cutout-eiffel { z-index: 4; width: 27%; height: 63%; left: 7%; top: 18%; clip-path: polygon(5% 0, 95% 5%, 100% 95%, 8% 100%, 0 12%); transform: rotate(-7deg); }
 .cutout-fashion { z-index: 6; width: 25%; height: 58%; right: 3%; top: 23%; clip-path: polygon(9% 0, 92% 4%, 100% 86%, 79% 100%, 3% 94%, 0 13%); transform: rotate(5deg); }
 .cutout-venice { z-index: 7; width: 24%; height: 48%; left: 27%; top: 43%; clip-path: polygon(3% 9%, 89% 0, 100% 93%, 12% 100%, 0 82%); transform: rotate(4deg); }
 .collage-sticker { position: absolute; z-index: 8; display: grid; place-items: center; text-align: center; filter: drop-shadow(0 10px 8px rgba(17,17,15,.12)); }
@@ -66,7 +66,7 @@ h1 em { color: var(--red); }
 .hero-local strong { font-weight: 400; }
 .hero-caption { position: absolute; z-index: 10; right: 4%; bottom: 35px; margin: 0; font: italic .76rem var(--serif); }
 
-.work, .manifesto, .services { padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px); }
+.work, .manifesto, .services { padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px); padding-left: clamp(250px, 19vw, 290px); }
 .section-heading { display: grid; grid-template-columns: 1fr 2fr; border-top: 1px solid var(--ink); padding-top: 1.2rem; }
 .section-heading .eyebrow { grid-row: span 2; }
 .section-heading h2, .manifesto h2, .contact h2 { font-size: clamp(3rem, 7.2vw, 8rem); line-height: .92; }
@@ -122,7 +122,7 @@ h1 em { color: var(--red); }
 .service-list h3 { margin: 0; font: 400 clamp(2rem, 4vw, 4.8rem)/.95 var(--serif); letter-spacing: -.04em; }
 .service-list p { max-width: 29rem; margin: 0; line-height: 1.45; }
 
-.contact { min-height: 100svh; padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px) 24px; display: flex; flex-direction: column; background: var(--blue); color: #fff; }
+.contact { min-height: 100svh; padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px) 24px; padding-left: clamp(250px, 19vw, 290px); display: flex; flex-direction: column; background: var(--blue); color: #fff; }
 .contact h2 { max-width: 11ch; }
 .contact-copy { max-width: 38rem; margin: 2rem 0 3rem; font: 1.15rem/1.45 var(--serif); }
 .contact-link { position: relative; width: max-content; margin-top: auto; font: clamp(1.25rem, 2.5vw, 2.7rem)/1.2 var(--serif); }
@@ -176,6 +176,7 @@ h1 em { color: var(--red); }
   .hero-caption { display: none; }
   h1 { font-size: clamp(2.35rem, 11vw, 4rem); }
   .work, .manifesto, .services { padding-left: 20px; padding-right: 20px; }
+  .contact { padding-left: 20px; }
   .case-notes, .manifesto-copy { grid-template-columns: 1fr; }
   .detail { aspect-ratio: 1.45; }
   .service-list li { gap: 1rem; }
