@@ -29,11 +29,8 @@ img { display:block; width:100%; }
 .case-section h2 { max-width:26ch; margin:0; font:400 clamp(2.2rem,3.5vw,4rem)/1.02 var(--serif); letter-spacing:-.035em; }
 .case-section .copy { max-width:62rem; margin:2rem 0 0; color:#8f8d87; font-size:clamp(1.25rem,2vw,1.9rem); line-height:1.45; }
 .case-section .copy p { margin:0 0 1.4rem; }
-.detail-frame { margin-top:4rem; min-height:460px; overflow:hidden; border-radius:22px; background:#fff; border:1px solid var(--line); }
-.detail-frame img { width:100%; height:100%; min-height:460px; object-fit:cover; transform:scale(1.16); }
-.challenge .detail-frame img { object-position:left top; }
-.approach .detail-frame img { object-position:center center; }
-.outcome .detail-frame img { object-position:right bottom; }
+.detail-frame { margin-top:4rem; aspect-ratio:16/9; overflow:hidden; border-radius:22px; background:#fff; border:1px solid var(--line); }
+.detail-frame img { width:100%; height:100%; object-fit:cover; object-position:top center; }
 .next-project { display:flex; justify-content:space-between; align-items:end; gap:2rem; padding:5rem 0 1rem; border-top:1px solid var(--line); }
 .next-project span { display:block; margin-bottom:.7rem; color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; }
 .next-project strong { font-weight:400; font-size:clamp(2rem,4vw,4.5rem); }
@@ -46,6 +43,6 @@ img { display:block; width:100%; }
   .facts { grid-template-columns:1fr; }
   .case-visual { margin:3rem 0 5rem; border-radius:14px; }
   .case-section { min-height:auto; padding:5rem 0; }
-  .detail-frame, .detail-frame img { min-height:260px; }
+  .detail-frame { min-height:0; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
