@@ -21,7 +21,7 @@ a { color: inherit; text-decoration: none; }
 .progress { position: fixed; z-index: 90; top: 0; left: 0; height: 3px; width: 0; background: var(--red); }
 
 .rail { position: fixed; inset: 0 auto 0 0; z-index: 20; width: var(--rail); padding: 28px 24px; border-right: 1px solid var(--line); display: flex; flex-direction: column; background: rgba(242,240,234,.94); backdrop-filter: blur(12px); }
-.wordmark { font-size: 2rem; font-weight: 700; letter-spacing: -.08em; }
+.wordmark { font-size: 1.7rem; font-weight: 700; letter-spacing: -.07em; }
 .wordmark span { font-size: .55rem; vertical-align: top; margin-left: .25rem; }
 .rail nav { display: flex; flex-direction: column; gap: .55rem; margin-top: 5rem; font: 1.1rem/1.2 var(--serif); }
 .rail nav a { width: max-content; position: relative; }
@@ -53,6 +53,7 @@ h1 em { color: var(--red); }
 .section-heading .eyebrow { grid-row: span 2; }
 .section-heading h2, .manifesto h2, .contact h2 { font-size: clamp(3rem, 7.2vw, 8rem); line-height: .92; }
 .lede { max-width: 48rem; font: 1.35rem/1.35 var(--serif); }
+.work-filters { display: flex; flex-wrap: wrap; gap: .7rem 1.4rem; margin-top: 3rem; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: .63rem; text-transform: uppercase; letter-spacing: .09em; }
 .case-grid { display: grid; grid-template-columns: 1.45fr .55fr; gap: clamp(20px, 4vw, 64px); margin-top: 5rem; align-items: end; }
 .case-image { margin: 0; background: var(--red); }
 .case-image img { aspect-ratio: 3 / 4; object-fit: cover; }
@@ -74,6 +75,7 @@ h1 em { color: var(--red); }
 .manifesto h2 { max-width: 12ch; }
 .manifesto-copy { align-self: flex-end; width: min(680px, 64%); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 7rem; font: 1.15rem/1.45 var(--serif); }
 .manifesto-copy p { margin: 0; }
+.process-line { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-top: 5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,.55); font-size: .64rem; text-transform: uppercase; letter-spacing: .09em; }
 
 .section-heading.compact { grid-template-columns: .65fr 2fr; }
 .service-list { list-style: none; padding: 0; margin: 6rem 0 0; }
@@ -85,6 +87,7 @@ h1 em { color: var(--red); }
 
 .contact { min-height: 100svh; padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px) 24px; display: flex; flex-direction: column; background: var(--blue); color: #fff; }
 .contact h2 { max-width: 11ch; }
+.contact-copy { max-width: 38rem; margin: 2rem 0 3rem; font: 1.15rem/1.45 var(--serif); }
 .contact-link { position: relative; width: max-content; margin-top: auto; font: clamp(1.25rem, 2.5vw, 2.7rem)/1.2 var(--serif); }
 .contact footer { display: flex; justify-content: space-between; border-top: 1px solid rgba(255,255,255,.45); margin-top: 2rem; padding-top: 1rem; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; }
 .reveal { opacity: 0; transform: translateY(35px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
@@ -109,6 +112,7 @@ h1 em { color: var(--red); }
   .detail-strip { grid-template-columns: 1fr; }
   .detail { aspect-ratio: 2.4; }
   .manifesto-copy { width: 100%; }
+  .process-line { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .service-list li { grid-template-columns: 40px 1fr; }
   .service-list p { grid-column: 2; }
 }
