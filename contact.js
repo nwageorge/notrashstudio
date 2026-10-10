@@ -23,6 +23,7 @@ form?.addEventListener('submit', async (event) => {
     from_name: 'NoTrash Studio website',
     name: data.get('name'),
     email: data.get('email'),
+    phone: data.get('phone') || 'Not provided',
     service: data.get('service'),
     message: data.get('message'),
     botcheck: data.get('botcheck') ? 'true' : ''
