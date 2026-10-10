@@ -1,0 +1,37 @@
+.inquiry-page { background-color: var(--paper); background-image: radial-gradient(rgba(17,17,15,.045) .6px, transparent .7px); background-size: 5px 5px; }
+.inquiry-main { margin-left: clamp(220px, 19vw, 290px); padding: clamp(44px, 6vw, 90px) clamp(24px, 6vw, 90px) 24px; }
+.inquiry-intro { min-height: 62svh; display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: clamp(60px, 9vw, 130px); }
+.back-link { width: max-content; margin-bottom: auto; font: .72rem/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.inquiry-intro .eyebrow { margin-top: 5rem; }
+.inquiry-intro h1 { max-width: 12ch; font-family: var(--serif); font-size: clamp(4rem, 9vw, 10rem); line-height: .82; }
+.inquiry-intro h1 em { color: var(--red); }
+.inquiry-intro > p:last-child { max-width: 48rem; margin: 2.5rem 0 0; color: #6a6863; font: clamp(1.15rem, 1.7vw, 1.65rem)/1.42 var(--serif); }
+.inquiry-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(250px, .72fr); gap: clamp(50px, 8vw, 130px); padding: clamp(60px, 8vw, 120px) 0; border-top: 1px solid var(--ink); }
+.inquiry-form { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+.field { padding: 1.6rem 0 1.3rem; border-top: 1px solid var(--line); }
+.field:nth-child(-n+2) { border-top-color: var(--ink); }
+.field-wide { grid-column: 1 / -1; }
+.field label { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: .85rem; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; }
+.field label span { color: #8b8983; }
+.field input, .field select, .field textarea { width: 100%; border: 0; border-radius: 0; outline: 0; padding: .15rem 0; background: transparent; color: var(--ink); font: 1.25rem/1.35 var(--serif); }
+.field textarea { resize: vertical; min-height: 150px; }
+.field input::placeholder, .field textarea::placeholder { color: #a8a69f; }
+.field input:focus, .field select:focus, .field textarea:focus { box-shadow: 0 2px 0 var(--red); }
+.form-finish { display: flex; align-items: center; gap: 2rem; padding-top: 2rem; }
+.form-finish button { flex: 0 0 auto; border: 0; border-radius: 0; padding: 1rem 1.25rem; background: var(--ink); color: #fff; cursor: pointer; font: .72rem/1 var(--sans); text-transform: uppercase; letter-spacing: .09em; }
+.form-finish button:hover, .form-finish button:focus-visible { background: var(--red); }
+.form-finish p { max-width: 25rem; margin: 0; color: #77756f; font: .85rem/1.45 var(--serif); }
+.form-status { margin-top: 2rem; padding: 1.25rem; border: 1px solid var(--ink); }
+.form-status strong, .form-status span { display: block; }
+.form-status span { margin: .4rem 0 1rem; color: #6a6863; font: .95rem/1.4 var(--serif); }
+.form-status a { text-decoration: underline; text-underline-offset: .25rem; }
+.contact-details { position: sticky; top: 3rem; align-self: start; }
+.contact-details dl { margin: 0; }
+.contact-details dl div { padding: 1.2rem 0; border-top: 1px solid var(--line); }
+.contact-details dt { margin-bottom: .45rem; color: #77756f; font-size: .62rem; text-transform: uppercase; letter-spacing: .1em; }
+.contact-details dd { margin: 0; font: 1.15rem/1.3 var(--serif); }
+.contact-details a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .25rem; }
+.contact-note { margin: 2.5rem 0 0; color: #77756f; font: 1rem/1.5 var(--serif); }
+.inquiry-footer { display: flex; justify-content: space-between; gap: 1rem; padding-top: 1rem; border-top: 1px solid var(--ink); font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; }
+@media (max-width:900px) { .inquiry-main { margin-left: 0; padding-top: 100px; } .inquiry-layout { grid-template-columns: 1fr; } .contact-details { position: static; } }
+@media (max-width:600px) { .inquiry-main { padding-left: 20px; padding-right: 20px; } .inquiry-intro { min-height: 72svh; } .inquiry-intro h1 { font-size: clamp(3.5rem, 18vw, 6rem); } .inquiry-form { grid-template-columns: 1fr; } .field-wide { grid-column: auto; } .field:nth-child(2) { border-top-color: var(--line); } .form-finish { align-items: flex-start; flex-direction: column; } .inquiry-footer { align-items: flex-start; flex-direction: column; } }
