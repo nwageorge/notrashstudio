@@ -1,7 +1,7 @@
 .inquiry-page { background-color:var(--paper); background-image:radial-gradient(rgba(17,17,15,.045) .6px,transparent .7px); background-size:5px 5px; }
 .inquiry-main { margin-left:clamp(220px,19vw,290px); padding:34px clamp(24px,4vw,64px) 24px; }
 .back-link { display:inline-block; margin-bottom:2rem; font:.7rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace; }
-.inquiry-layout { min-height:calc(100svh - 128px); border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+.inquiry-layout { min-height:calc(100svh - 128px); border-bottom:1px solid var(--ink); }
 .conversation-panel { padding:clamp(36px,4vw,64px) clamp(28px,4vw,58px) 32px 0; display:flex; flex-direction:column; }
 .conversation-panel .eyebrow { color:var(--red); margin-bottom:1.8rem; }
 .conversation-panel h1 { margin:0 0 3rem; font-family:var(--sans); font-size:clamp(3.5rem,5.2vw,6.5rem); font-weight:700; line-height:.84; letter-spacing:-.075em; }
