@@ -39,6 +39,7 @@
 .form-finish { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; padding-top:1.6rem; }
 .form-finish button { order:2; flex:0 0 auto; border:0; border-radius:12px; padding:1rem 1.25rem; background:#fff; color:var(--red); cursor:pointer; font:700 .72rem/1 var(--sans); text-transform:uppercase; letter-spacing:.08em; }
 .form-finish button:hover,.form-finish button:focus-visible { background:var(--ink); color:#fff; }
+.form-finish button:disabled { opacity:.6; cursor:wait; }
 .form-finish p { max-width:27rem; margin:0; color:rgba(255,255,255,.76); font:.78rem/1.45 var(--serif); }
 .form-status { margin-top:1.5rem; padding:1.1rem; border:1px solid #fff; border-radius:12px; }
 .form-status strong,.form-status span { display:block; }

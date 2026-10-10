@@ -47,17 +47,18 @@
       <section class="form-card" aria-labelledby="form-heading">
         <header class="form-heading"><div><p class="eyebrow">Project inquiry</p><h2 id="form-heading">Good design is never<br><em>an accident.</em></h2><p>Tell us what you’re building, changing, or imagining.</p></div><span aria-hidden="true">↗</span></header>
         <form class="inquiry-form" id="project-form">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
         <div class="field field-wide service-field"><label for="service">What is this about?</label><select id="service" name="service" required><option>Brand identity</option><option>Website design</option><option>Web development</option><option>Graphic design</option><option>Animation</option><option>Photography</option><option>Advertising</option><option>Creative direction</option><option>Something else</option></select><small id="service-note">Build a distinctive identity with a clear strategy and a system made to last.</small></div>
         <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
         <div class="field field-wide"><label for="message">Tell us about your project</label><textarea id="message" name="message" rows="6" placeholder="What are you hoping to create?" required></textarea></div>
         <div class="form-finish field-wide">
-          <button type="submit">Prepare message <span aria-hidden="true">→</span></button>
-          <p>Your details stay in your browser. We’ll copy your inquiry and open Instagram so you can send it directly.</p>
+          <button type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p>Your message goes straight to our inbox. We’ll reply to the email you enter above.</p>
         </div>
         <div class="form-status field-wide" id="form-status" role="status" aria-live="polite" hidden>
-          <strong>Your message is ready.</strong>
-          <span>It has been copied. Paste it into your Instagram message to NoTrash Studio.</span>
+          <strong>Your message is sent.</strong>
+          <span>Thanks for reaching out. We’ll reply by email soon.</span>
           <a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer">Open @notrashstudio ↗</a>
         </div>
         </form>
