@@ -22,7 +22,7 @@ a { color: inherit; text-decoration: none; }
 
 .rail { position: fixed; inset: 0 auto 0 0; z-index: 20; width: var(--rail); padding: 28px 24px; border-right: 0; display: flex; flex-direction: column; background: rgba(242,240,234,.94); backdrop-filter: blur(12px); }
 .wordmark { display: block; width: max-content; }
-.wordmark img { width: auto; height: 26px; }
+.wordmark img { width: auto; height: 21px; }
 .rail nav { display: flex; flex-direction: column; gap: .55rem; margin-top: 5rem; font: 1.1rem/1.2 var(--serif); }
 .rail nav a { width: max-content; position: relative; }
 .rail nav a::after, .text-link::after, .contact-link::after { content: ""; position: absolute; left: 0; bottom: -.2em; height: 1px; width: 100%; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .35s ease; }
@@ -139,7 +139,7 @@ h1 em { color: var(--red); }
   :root { --rail: 0px; }
   .rail { position: fixed; inset: 10px 10px auto; width: auto; height: 60px; padding: 0 8px 0 20px; border: 0; border-radius: 22px; background: rgba(247,245,240,.9); color: var(--ink); flex-direction: row; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(17,17,15,.07); backdrop-filter: blur(12px); }
   .rail nav, .rail-bottom { display: none; }
-  .wordmark img { height: 22px; }
+  .wordmark img { height: 18px; }
   .menu-toggle, .menu-close { width: 44px; height: 44px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
   .menu-toggle { display: grid; place-content: center; gap: 6px; }
   .menu-toggle span { display: block; width: 28px; height: 2px; border-radius: 2px; background: currentColor; }
