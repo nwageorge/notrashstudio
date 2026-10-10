@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Start a project with NoTrash Studio in Philadelphia.">
+  <meta name="theme-color" content="#f2f0ea">
+  <title>Start a Project | NoTrash Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23a70d09'/%3E%3Ctext x='9' y='44' font-family='Arial' font-size='34' font-weight='700' fill='white'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+  <script defer src="contact.js"></script>
+</head>
+<body class="inquiry-page">
+  <a class="skip-link" href="#inquiry">Skip to inquiry form</a>
+  <aside class="rail" aria-label="Contact navigation">
+    <a class="wordmark" href="index.html">NoTrash.</a>
+    <nav>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">Studio</a>
+      <a href="index.html#services">Services</a>
+      <a aria-current="page" href="#inquiry">Contact</a>
+    </nav>
+    <div class="rail-bottom"><p>Creative studio</p><p>Philadelphia</p></div>
+  </aside>
+
+  <main class="inquiry-main">
+    <header class="inquiry-intro">
+      <a class="back-link" href="index.html#contact">← Back to NoTrash</a>
+      <p class="eyebrow">Start a project</p>
+      <h1>Let’s make<br>something <em>good.</em></h1>
+      <p>Whether you’re building a brand from scratch, launching a new website, or looking for a creative partner, we’d love to hear what you’re working on.</p>
+    </header>
+
+    <div class="inquiry-layout" id="inquiry">
+      <form class="inquiry-form" id="project-form">
+        <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="company">Company <span>Optional</span></label><input id="company" name="company" autocomplete="organization"></div>
+        <div class="field"><label for="service">What can we help with?</label><select id="service" name="service" required><option value="" selected disabled>Select a service</option><option>Brand identity</option><option>Website design</option><option>Web development</option><option>Graphic design</option><option>Animation</option><option>Photography</option><option>Advertising</option><option>Creative direction</option><option>Something else</option></select></div>
+        <div class="field"><label for="budget">Estimated budget <span>Optional</span></label><input id="budget" name="budget" placeholder="Your preferred range"></div>
+        <div class="field"><label for="timeline">Desired timeline</label><input id="timeline" name="timeline" placeholder="When would you like to launch?" required></div>
+        <div class="field field-wide"><label for="message">Tell us about your project</label><textarea id="message" name="message" rows="6" placeholder="What are you hoping to create?" required></textarea></div>
+        <div class="form-finish field-wide">
+          <button type="submit">Prepare message <span aria-hidden="true">→</span></button>
+          <p>Your details stay in your browser. We’ll copy your inquiry and open Instagram so you can send it directly.</p>
+        </div>
+        <div class="form-status field-wide" id="form-status" role="status" aria-live="polite" hidden>
+          <strong>Your message is ready.</strong>
+          <span>It has been copied. Paste it into your Instagram message to NoTrash Studio.</span>
+          <a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer">Open @notrashstudio ↗</a>
+        </div>
+      </form>
+
+      <aside class="contact-details" aria-label="NoTrash Studio contact details">
+        <p class="eyebrow">Contact details</p>
+        <dl>
+          <div><dt>Instagram</dt><dd><a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer">@notrashstudio ↗</a></dd></div>
+          <div><dt>Website</dt><dd><a href="https://notrashstudio.com" target="_blank" rel="noreferrer">notrashstudio.com ↗</a></dd></div>
+          <div><dt>Based in</dt><dd>Philadelphia</dd></div>
+          <div><dt>Working with</dt><dd>Clients worldwide</dd></div>
+        </dl>
+        <p class="contact-note">Brand, digital design, development, and visual storytelling—built with purpose from first idea to final delivery.</p>
+      </aside>
+    </div>
+
+    <footer class="inquiry-footer"><span>© 2026 NoTrash Studio · We don’t do trash.™</span><a href="index.html">Return home ↑</a></footer>
+  </main>
+</body>
+</html>
