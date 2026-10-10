@@ -21,7 +21,7 @@
 .form-card { margin:18px 0; padding:clamp(34px,5vw,78px); border:0; border-radius:0; background:var(--red); color:#fff; }
 .form-heading { display:flex; justify-content:space-between; align-items:start; padding-bottom:clamp(3rem,6vw,7rem); border-bottom:1px solid rgba(255,255,255,.5); }
 .form-heading .eyebrow { color:#fff; margin-bottom:1.4rem; }
-.form-heading h2 { max-width:12ch; margin:0; font:400 clamp(4rem,7.2vw,8rem)/.88 var(--serif); letter-spacing:-.055em; }
+.form-heading h2 { max-width:15ch; margin:0; font:400 clamp(3.1rem,5.4vw,6rem)/.92 var(--serif); letter-spacing:-.05em; }
 .form-heading h2 em { color:#fff; font-weight:400; }
 .form-heading p:last-child { max-width:38rem; margin:2rem 0 0; font:1.15rem/1.45 var(--serif); }
 .form-heading>span { color:#fff; font:3rem/1 var(--serif); transform:rotate(-12deg); }
@@ -51,4 +51,4 @@
 .inquiry-footer { display:flex; justify-content:space-between; gap:1rem; padding-top:1rem; font-size:.62rem; text-transform:uppercase; letter-spacing:.08em; }
 @media(max-width:1100px){.form-card{margin:18px 0}}
 @media(max-width:900px){.inquiry-main{margin-left:0;padding:100px 20px 24px}.inquiry-layout{min-height:0}}
-@media(max-width:600px){.conversation-panel h1{font-size:clamp(3.5rem,17vw,5.2rem)}.form-card{padding:26px 18px;border-radius:18px}.inquiry-form{grid-template-columns:1fr}.field-wide{grid-column:auto}.form-finish{align-items:flex-start;flex-direction:column}.form-finish button{order:0}.inquiry-footer{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.form-card{padding:24px 16px}.form-heading{padding-bottom:2rem}.form-heading h2{font-size:clamp(2.35rem,11vw,3.5rem);line-height:.94}.form-heading p:last-child{margin-top:1.2rem;font-size:.95rem}.form-heading>span{font-size:2rem}.inquiry-form{grid-template-columns:1fr}.field-wide{grid-column:auto}.field{padding:.9rem 0}.field input,.field select,.field textarea{padding:.72rem .8rem;border-radius:9px;font-size:.92rem}.field textarea{min-height:130px}.service-field small{font-size:.7rem}.form-finish{align-items:flex-start;flex-direction:column;padding-top:1.15rem}.form-finish button{order:0;padding:.85rem 1rem}.contact-ways{padding-top:2rem}.inquiry-footer{align-items:flex-start;flex-direction:column}}
