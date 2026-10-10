@@ -35,7 +35,7 @@ a { color: inherit; text-decoration: none; }
 
 main { margin-left: 0; }
 .hero { min-height: 154svh; margin-left: 0; position: relative; overflow: hidden; border-bottom: 0; background: var(--paper); }
-.hero-copy { position: relative; z-index: 8; width: min(900px, 68%); margin-left: clamp(250px, 19vw, 290px); padding-top: clamp(115px, 15vh, 190px); }
+.hero-copy { position: relative; z-index: 8; width: min(760px, 60%); margin-left: clamp(250px, 19vw, 290px); padding-top: clamp(115px, 15vh, 190px); }
 .eyebrow { margin: 0 0 2rem; font-size: .66rem; line-height: 1.2; text-transform: uppercase; letter-spacing: .12em; }
 h1, h2 { margin: 0; font-weight: 400; letter-spacing: -.055em; text-wrap: balance; }
 h1 { font-size: clamp(2.35rem, 3.45vw, 4.25rem); line-height: 1.04; }
