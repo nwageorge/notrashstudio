@@ -10,11 +10,13 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="contact.css">
   <script defer src="contact.js"></script>
+  <script defer src="menu.js"></script>
 </head>
 <body class="inquiry-page">
   <a class="skip-link" href="#inquiry">Skip to inquiry form</a>
   <aside class="rail" aria-label="Contact navigation">
     <a class="wordmark" href="index.html">NoTrash.</a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span></button>
     <nav>
       <a href="index.html#work">Work</a>
       <a href="index.html#about">Studio</a>
@@ -23,6 +25,21 @@
     </nav>
     <div class="rail-bottom"><p>Creative studio</p><p>Philadelphia</p></div>
   </aside>
+
+  <div class="menu" id="site-menu" role="dialog" aria-modal="true" aria-label="Menu" inert>
+    <button class="menu-close" type="button" aria-label="Close menu"></button>
+    <nav class="menu-primary" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">Studio</a>
+      <a href="index.html#services">Services</a>
+      <a aria-current="page" href="#inquiry">Contact</a>
+    </nav>
+    <nav class="menu-secondary" aria-label="More">
+      <a href="#inquiry">Start a project</a>
+      <a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://notrashstudio.com">notrashstudio.com</a>
+    </nav>
+  </div>
 
   <main class="inquiry-main" id="inquiry">
     <a class="back-link" href="index.html#contact">← Back to NoTrash</a>
