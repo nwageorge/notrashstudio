@@ -1,5 +1,22 @@
 const form = document.querySelector('#project-form');
 const status = document.querySelector('#form-status');
+const service = document.querySelector('#service');
+const serviceNote = document.querySelector('#service-note');
+const conversations = document.querySelectorAll('.conversation');
+
+conversations.forEach((button) => button.addEventListener('click', () => {
+  conversations.forEach(item => item.classList.remove('active'));
+  button.classList.add('active');
+  service.value = button.dataset.service;
+  serviceNote.textContent = button.dataset.note;
+  service.focus({ preventScroll:true });
+}));
+
+service?.addEventListener('change', () => {
+  const match = [...conversations].find(button => button.dataset.service === service.value);
+  conversations.forEach(item => item.classList.toggle('active', item === match));
+  if (match) serviceNote.textContent = match.dataset.note;
+});
 
 form?.addEventListener('submit', async (event) => {
   event.preventDefault();

@@ -24,20 +24,34 @@
     <div class="rail-bottom"><p>Creative studio</p><p>Philadelphia</p></div>
   </aside>
 
-  <main class="inquiry-main">
-    <header class="inquiry-intro">
-      <a class="back-link" href="index.html#contact">← Back to NoTrash</a>
-      <p class="eyebrow">Start a project</p>
-      <h1>Let’s make<br>something <em>good.</em></h1>
-      <p>Whether you’re building a brand from scratch, launching a new website, or looking for a creative partner, we’d love to hear what you’re working on.</p>
-    </header>
+  <main class="inquiry-main" id="inquiry">
+    <a class="back-link" href="index.html#contact">← Back to NoTrash</a>
+    <div class="inquiry-layout">
+      <section class="conversation-panel" aria-labelledby="contact-title">
+        <p class="eyebrow">Choose a conversation</p>
+        <h1 id="contact-title">What can we<br>help move<br><em>forward?</em></h1>
+        <div class="conversation-list" aria-label="Choose a project type">
+          <button type="button" class="conversation active" data-service="Brand identity" data-note="Build a distinctive identity with a clear strategy and a system made to last."><span><strong>Brand identity</strong><small>Strategy, identity systems, guidelines, and launch assets.</small></span><b>01</b></button>
+          <button type="button" class="conversation" data-service="Website design" data-note="Shape an expressive, useful website around your audience and goals."><span><strong>Website design</strong><small>UX, visual direction, content structure, and responsive design.</small></span><b>02</b></button>
+          <button type="button" class="conversation" data-service="Web development" data-note="Turn an approved direction into a polished, responsive digital experience."><span><strong>Web development</strong><small>Frontend builds, interactions, testing, and launch support.</small></span><b>03</b></button>
+          <button type="button" class="conversation" data-service="Creative direction" data-note="Bring campaign, content, and visual decisions into one coherent direction."><span><strong>Creative direction</strong><small>Campaigns, motion, photography, and visual storytelling.</small></span><b>04</b></button>
+          <button type="button" class="conversation" data-service="Something else" data-note="Tell us what you are imagining—we are always open to an interesting brief."><span><strong>Something else</strong><small>Graphic design, animation, advertising, or a new kind of collaboration.</small></span><b>05</b></button>
+        </div>
+        <div class="contact-ways" aria-label="NoTrash Studio contact details">
+          <p class="eyebrow">Other ways to reach us</p>
+          <a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@notrashstudio ↗</strong></a>
+          <a href="https://notrashstudio.com" target="_blank" rel="noreferrer"><span>Website</span><strong>notrashstudio.com ↗</strong></a>
+          <div><span>Based in</span><strong>Philadelphia · Worldwide</strong></div>
+        </div>
+      </section>
 
-    <div class="inquiry-layout" id="inquiry">
-      <form class="inquiry-form" id="project-form">
+      <section class="form-card" aria-labelledby="form-heading">
+        <header class="form-heading"><div><p class="eyebrow">Project inquiry</p><h2 id="form-heading">Tell us what<br>you know.</h2></div><span aria-hidden="true">↗</span></header>
+        <form class="inquiry-form" id="project-form">
+        <div class="field field-wide service-field"><label for="service">What is this about?</label><select id="service" name="service" required><option>Brand identity</option><option>Website design</option><option>Web development</option><option>Graphic design</option><option>Animation</option><option>Photography</option><option>Advertising</option><option>Creative direction</option><option>Something else</option></select><small id="service-note">Build a distinctive identity with a clear strategy and a system made to last.</small></div>
         <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
         <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
         <div class="field"><label for="company">Company <span>Optional</span></label><input id="company" name="company" autocomplete="organization"></div>
-        <div class="field"><label for="service">What can we help with?</label><select id="service" name="service" required><option value="" selected disabled>Select a service</option><option>Brand identity</option><option>Website design</option><option>Web development</option><option>Graphic design</option><option>Animation</option><option>Photography</option><option>Advertising</option><option>Creative direction</option><option>Something else</option></select></div>
         <div class="field"><label for="budget">Estimated budget <span>Optional</span></label><input id="budget" name="budget" placeholder="Your preferred range"></div>
         <div class="field"><label for="timeline">Desired timeline</label><input id="timeline" name="timeline" placeholder="When would you like to launch?" required></div>
         <div class="field field-wide"><label for="message">Tell us about your project</label><textarea id="message" name="message" rows="6" placeholder="What are you hoping to create?" required></textarea></div>
@@ -50,18 +64,8 @@
           <span>It has been copied. Paste it into your Instagram message to NoTrash Studio.</span>
           <a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer">Open @notrashstudio ↗</a>
         </div>
-      </form>
-
-      <aside class="contact-details" aria-label="NoTrash Studio contact details">
-        <p class="eyebrow">Contact details</p>
-        <dl>
-          <div><dt>Instagram</dt><dd><a href="https://instagram.com/notrashstudio" target="_blank" rel="noreferrer">@notrashstudio ↗</a></dd></div>
-          <div><dt>Website</dt><dd><a href="https://notrashstudio.com" target="_blank" rel="noreferrer">notrashstudio.com ↗</a></dd></div>
-          <div><dt>Based in</dt><dd>Philadelphia</dd></div>
-          <div><dt>Working with</dt><dd>Clients worldwide</dd></div>
-        </dl>
-        <p class="contact-note">Brand, digital design, development, and visual storytelling—built with purpose from first idea to final delivery.</p>
-      </aside>
+        </form>
+      </section>
     </div>
 
     <footer class="inquiry-footer"><span>© 2026 NoTrash Studio · We don’t do trash.™</span><a href="index.html">Return home ↑</a></footer>
