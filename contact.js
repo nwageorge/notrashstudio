@@ -8,10 +8,7 @@ form?.addEventListener('submit', async (event) => {
     '',
     `Name: ${data.get('name')}`,
     `Email: ${data.get('email')}`,
-    `Company: ${data.get('company') || 'Not provided'}`,
     `Service: ${data.get('service')}`,
-    `Budget: ${data.get('budget') || 'Not provided'}`,
-    `Timeline: ${data.get('timeline')}`,
     '',
     'Project details:',
     data.get('message')
