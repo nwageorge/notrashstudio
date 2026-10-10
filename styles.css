@@ -20,7 +20,7 @@ a { color: inherit; text-decoration: none; }
 .skip-link:focus { transform: none; }
 .progress { position: fixed; z-index: 90; top: 0; left: 0; height: 3px; width: 0; background: var(--red); }
 
-.rail { position: fixed; inset: 0 auto 0 0; z-index: 20; width: var(--rail); padding: 28px 24px; border-right: 1px solid var(--line); display: flex; flex-direction: column; background: rgba(242,240,234,.94); backdrop-filter: blur(12px); }
+.rail { position: fixed; inset: 0 auto 0 0; z-index: 20; width: var(--rail); padding: 28px 24px; border-right: 0; display: flex; flex-direction: column; background: rgba(242,240,234,.94); backdrop-filter: blur(12px); }
 .wordmark { font-size: 1.7rem; font-weight: 700; letter-spacing: -.07em; }
 .wordmark span { font-size: .55rem; vertical-align: top; margin-left: .25rem; }
 .rail nav { display: flex; flex-direction: column; gap: .55rem; margin-top: 5rem; font: 1.1rem/1.2 var(--serif); }
@@ -33,7 +33,7 @@ a { color: inherit; text-decoration: none; }
 .availability i { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #27a35a; margin-right: .4rem; animation: pulse 2s infinite; }
 
 main { margin-left: var(--rail); }
-.hero { min-height: 148svh; position: relative; overflow: hidden; border-bottom: 1px solid var(--line); background: #fff; }
+.hero { min-height: 148svh; position: relative; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--paper); }
 .hero-copy { position: relative; z-index: 8; width: min(820px, 64%); margin-left: clamp(90px, 16vw, 270px); padding-top: clamp(115px, 15vh, 190px); }
 .eyebrow { margin: 0 0 2rem; font-size: .66rem; line-height: 1.2; text-transform: uppercase; letter-spacing: .12em; }
 h1, h2 { margin: 0; font-weight: 400; letter-spacing: -.055em; text-wrap: balance; }
@@ -132,7 +132,7 @@ h1 em { color: var(--red); }
 @keyframes pulse { 50% { opacity: .35; } }
 @media (max-width: 900px) {
   :root { --rail: 0px; }
-  .rail { position: absolute; width: 100%; height: 72px; padding: 20px; border: 0; border-bottom: 1px solid var(--line); background: rgba(255,255,255,.88); color: var(--ink); flex-direction: row; align-items: center; backdrop-filter: blur(12px); }
+  .rail { position: absolute; width: 100%; height: 72px; padding: 20px; border: 0; background: rgba(242,240,234,.88); color: var(--ink); flex-direction: row; align-items: center; backdrop-filter: blur(12px); }
   .rail nav { margin: 0 0 0 auto; flex-direction: row; gap: 1rem; font: .75rem var(--sans); text-transform: uppercase; letter-spacing: .07em; }
   .rail nav a:nth-child(2), .rail nav a:nth-child(3) { display: none; }
   .rail-bottom { display: none; }
