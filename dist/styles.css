@@ -10,7 +10,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background-color: var(--paper); }
+html.at-end, html.at-end body { background-color: var(--blue); }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
 img { display: block; width: 100%; }
 a { color: inherit; text-decoration: none; }
@@ -35,6 +36,7 @@ a { color: inherit; text-decoration: none; }
 
 .menu-toggle, .menu { display: none; }
 main { margin-left: 0; }
+#main { background: var(--paper); }
 .hero { margin-left: 0; position: relative; overflow: hidden; border-bottom: 0; background: var(--paper); }
 .hero-copy { position: relative; z-index: 8; width: min(760px, 60%); margin-left: clamp(250px, 19vw, 290px); padding-top: clamp(115px, 15vh, 190px); }
 .eyebrow { margin: 0 0 2rem; font-size: .66rem; line-height: 1.2; text-transform: uppercase; letter-spacing: .12em; }
@@ -126,12 +128,12 @@ h1 em { color: var(--red); }
 .service-list h3 { margin: 0; font: 400 clamp(2rem, 4vw, 4.8rem)/.95 var(--serif); letter-spacing: -.04em; }
 .service-list p { max-width: 29rem; margin: 0; line-height: 1.45; }
 
-.contact { min-height: 100svh; padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px) 24px; padding-left: clamp(250px, 19vw, 290px); display: flex; flex-direction: column; background: var(--blue); color: #fff; }
+.contact { padding: clamp(70px, 10vw, 150px) clamp(24px, 6vw, 90px) 24px; padding-left: clamp(250px, 19vw, 290px); display: flex; flex-direction: column; background: var(--blue); color: #fff; }
 .contact h2 { max-width: 11ch; }
 .contact-copy { max-width: 38rem; margin: 2rem 0 3rem; font: 1.15rem/1.45 var(--serif); }
-.contact-link { position: relative; width: max-content; margin: .5rem 0 2rem; font: clamp(1.25rem, 2.5vw, 2.7rem)/1.2 var(--serif); }
+.contact-link { position: relative; width: max-content; margin-top: .5rem; font: clamp(1.25rem, 2.5vw, 2.7rem)/1.2 var(--serif); }
 .contact footer a { white-space: nowrap; }
-.contact footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid rgba(255,255,255,.45); margin-top: auto; padding-top: 1rem; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; }
+.contact footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid rgba(255,255,255,.45); margin-top: 2rem; padding-top: 1rem; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; }
 .reveal { opacity: 0; transform: translateY(35px); transition: opacity .8s ease, transform .8s cubic-bezier(.2,.8,.2,1); }
 .reveal.in { opacity: 1; transform: none; }
 
