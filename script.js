@@ -1,9 +1,3 @@
-const progress = document.querySelector('.progress');
-const updateProgress = () => {
-  const max = document.documentElement.scrollHeight - innerHeight;
-  progress.style.width = `${max > 0 ? (scrollY / max) * 100 : 0}%`;
-};
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -21,7 +15,6 @@ const updateBackdrop = () => {
   document.documentElement.classList.toggle('at-end', closing.getBoundingClientRect().top < innerHeight / 2);
 };
 
-const onScroll = () => { updateProgress(); updateBackdrop(); };
-addEventListener('scroll', onScroll, { passive: true });
-addEventListener('resize', onScroll);
-onScroll();
+addEventListener('scroll', updateBackdrop, { passive: true });
+addEventListener('resize', updateBackdrop);
+updateBackdrop();
