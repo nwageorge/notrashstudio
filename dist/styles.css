@@ -19,7 +19,6 @@ a { color: inherit; text-decoration: none; }
 
 .skip-link { position: fixed; z-index: 100; left: 1rem; top: 1rem; transform: translateY(-180%); background: var(--ink); color: #fff; padding: .7rem 1rem; }
 .skip-link:focus { transform: none; }
-.progress { position: fixed; z-index: 90; top: 0; left: 0; height: 3px; width: 0; background: var(--red); }
 
 .rail { position: fixed; inset: 0 auto 0 0; z-index: 20; width: var(--rail); padding: 28px 24px; border-right: 0; display: flex; flex-direction: column; background: rgba(242,240,234,.94); backdrop-filter: blur(12px); }
 .wordmark { display: block; width: max-content; }
