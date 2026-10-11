@@ -42,7 +42,7 @@ form?.addEventListener('submit', async (event) => {
     form.reset();
     showStatus('Your message is sent.', 'Thanks for reaching out. We’ll reply by email soon.', false);
   } catch {
-    showStatus('Your message didn’t send.', 'Please try again in a moment, or message us on Instagram instead.', true);
+    showStatus('Your message didn’t send.', 'Please try again in a moment, or email us directly instead.', true);
   } finally {
     button.disabled = false;
     button.innerHTML = buttonLabel;
