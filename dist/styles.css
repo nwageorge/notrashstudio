@@ -22,7 +22,7 @@ a { color: inherit; text-decoration: none; }
 
 .rail { position: fixed; inset: 0 auto 0 0; z-index: 20; width: var(--rail); padding: 28px 24px; border-right: 0; display: flex; flex-direction: column; background: rgba(242,240,234,.94); backdrop-filter: blur(12px); }
 .wordmark { display: block; width: max-content; }
-.wordmark img { width: auto; height: 21px; }
+.wordmark img { width: auto; height: 18px; }
 .rail nav { display: flex; flex-direction: column; gap: .55rem; margin-top: 5rem; font: 1.1rem/1.2 var(--serif); }
 .rail nav a { width: max-content; position: relative; }
 .rail nav a::after, .text-link::after, .contact-link::after { content: ""; position: absolute; left: 0; bottom: -.2em; height: 1px; width: 100%; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform .35s ease; }
@@ -140,16 +140,16 @@ h1 em { color: var(--red); }
 @keyframes pulse { 50% { opacity: .35; } }
 @media (max-width: 900px) {
   :root { --rail: 0px; }
-  .rail { position: fixed; inset: 10px 10px auto; width: auto; height: 48px; padding: 0 5px 0 16px; border: 0; border-radius: 17px; background: rgba(247,245,240,.9); color: var(--ink); flex-direction: row; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(17,17,15,.07); backdrop-filter: blur(12px); }
+  .rail { position: fixed; inset: 10px 12px auto; width: auto; height: 42px; padding: 0 3px 0 15px; border: 1px solid rgba(255,255,255,.6); border-radius: 21px; background: linear-gradient(135deg, rgba(255,255,255,.62), rgba(255,255,255,.34)); color: var(--ink); flex-direction: row; align-items: center; justify-content: space-between; box-shadow: 0 8px 28px rgba(17,17,15,.1), inset 0 1px 0 rgba(255,255,255,.85), inset 0 -1px 0 rgba(17,17,15,.05); -webkit-backdrop-filter: blur(18px) saturate(180%); backdrop-filter: blur(18px) saturate(180%); }
   .rail nav, .rail-bottom { display: none; }
-  .wordmark img { height: 14px; }
-  .menu-toggle, .menu-close { width: 40px; height: 40px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
-  .menu-toggle { display: grid; place-content: center; gap: 5px; }
-  .menu-toggle span { display: block; width: 22px; height: 2px; border-radius: 2px; background: currentColor; }
+  .wordmark img { height: 12px; }
+  .menu-toggle, .menu-close { width: 38px; height: 38px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+  .menu-toggle { display: grid; place-content: center; gap: 4px; }
+  .menu-toggle span { display: block; width: 19px; height: 2px; border-radius: 2px; background: currentColor; }
   .menu { display: flex; position: fixed; inset: 0; z-index: 80; flex-direction: column; align-items: center; padding: 96px 24px 48px; overflow-y: auto; background: var(--paper); text-align: center; opacity: 0; visibility: hidden; transition: opacity .3s ease, visibility .3s; }
   .menu.open { opacity: 1; visibility: visible; }
-  .menu-close { position: absolute; top: 14px; right: 15px; }
-  .menu-close::before, .menu-close::after { content: ""; position: absolute; left: 9px; top: 19px; width: 22px; height: 2px; border-radius: 2px; background: currentColor; transform: rotate(45deg); }
+  .menu-close { position: absolute; top: 13px; right: 16px; }
+  .menu-close::before, .menu-close::after { content: ""; position: absolute; left: 9px; top: 18px; width: 20px; height: 2px; border-radius: 2px; background: currentColor; transform: rotate(45deg); }
   .menu-close::after { transform: rotate(-45deg); }
   .menu nav { display: grid; justify-items: center; transform: translateY(14px); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
   .menu.open nav { transform: none; }
