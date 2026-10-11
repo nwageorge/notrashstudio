@@ -140,16 +140,16 @@ h1 em { color: var(--red); }
 @keyframes pulse { 50% { opacity: .35; } }
 @media (max-width: 900px) {
   :root { --rail: 0px; }
-  .rail { position: fixed; inset: 10px 10px auto; width: auto; height: 60px; padding: 0 8px 0 20px; border: 0; border-radius: 22px; background: rgba(247,245,240,.9); color: var(--ink); flex-direction: row; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(17,17,15,.07); backdrop-filter: blur(12px); }
+  .rail { position: fixed; inset: 10px 10px auto; width: auto; height: 48px; padding: 0 5px 0 16px; border: 0; border-radius: 17px; background: rgba(247,245,240,.9); color: var(--ink); flex-direction: row; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(17,17,15,.07); backdrop-filter: blur(12px); }
   .rail nav, .rail-bottom { display: none; }
-  .wordmark img { height: 18px; }
-  .menu-toggle, .menu-close { width: 44px; height: 44px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
-  .menu-toggle { display: grid; place-content: center; gap: 6px; }
-  .menu-toggle span { display: block; width: 28px; height: 2px; border-radius: 2px; background: currentColor; }
+  .wordmark img { height: 14px; }
+  .menu-toggle, .menu-close { width: 40px; height: 40px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; }
+  .menu-toggle { display: grid; place-content: center; gap: 5px; }
+  .menu-toggle span { display: block; width: 22px; height: 2px; border-radius: 2px; background: currentColor; }
   .menu { display: flex; position: fixed; inset: 0; z-index: 80; flex-direction: column; align-items: center; padding: 96px 24px 48px; overflow-y: auto; background: var(--paper); text-align: center; opacity: 0; visibility: hidden; transition: opacity .3s ease, visibility .3s; }
   .menu.open { opacity: 1; visibility: visible; }
-  .menu-close { position: absolute; top: 18px; right: 18px; }
-  .menu-close::before, .menu-close::after { content: ""; position: absolute; left: 8px; top: 21px; width: 28px; height: 2px; border-radius: 2px; background: currentColor; transform: rotate(45deg); }
+  .menu-close { position: absolute; top: 14px; right: 15px; }
+  .menu-close::before, .menu-close::after { content: ""; position: absolute; left: 9px; top: 19px; width: 22px; height: 2px; border-radius: 2px; background: currentColor; transform: rotate(45deg); }
   .menu-close::after { transform: rotate(-45deg); }
   .menu nav { display: grid; justify-items: center; transform: translateY(14px); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
   .menu.open nav { transform: none; }
@@ -181,7 +181,7 @@ h1 em { color: var(--red); }
 }
 
 @media (max-width: 560px) {
-  .hero-copy { padding-top: 118px; }
+  .hero-copy { padding-top: 100px; }
   .hero-intro { margin-top: 1.4rem; font-size: 1rem; }
   .hero-actions { margin-top: 1.8rem; gap: 1.3rem; }
   .hero-actions a { font-size: .72rem; }
