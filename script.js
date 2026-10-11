@@ -14,6 +14,14 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: .14 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
-addEventListener('scroll', updateProgress, { passive: true });
-addEventListener('resize', updateProgress);
-updateProgress();
+// Match the colour behind the page to the blue closing section, so no
+// off-white strip shows below it when the browser overscrolls or resizes its bars.
+const closing = document.querySelector('.contact');
+const updateBackdrop = () => {
+  document.documentElement.classList.toggle('at-end', closing.getBoundingClientRect().top < innerHeight / 2);
+};
+
+const onScroll = () => { updateProgress(); updateBackdrop(); };
+addEventListener('scroll', onScroll, { passive: true });
+addEventListener('resize', onScroll);
+onScroll();
